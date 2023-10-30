@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Group Test SUite]">
+  <test thread-count="5" name="Verify Group1(failed)">
+    <parameter name="Browser" value="Chrome"/>
+    <groups>
+      <run>
+        <include name="Sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="TestingAnnotation.GroupTest1">
+        <methods>
+          <include name="group1"/>
+        </methods>
+      </class> <!-- TestingAnnotation.GroupTest1 -->
+    </classes>
+  </test> <!-- Verify Group1(failed) -->
+</suite> <!-- Failed suite [Group Test SUite] -->
